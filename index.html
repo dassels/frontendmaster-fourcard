@@ -5,43 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
   
   <title>Frontend Mentor | Four card feature section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
   
-  <h1>Reliable, efficient delivery</h1> 
-  <h2>Powered by Technology</h2> 
+  <div class='section-title'>
+    <h1>Reliable, efficient delivery</h1> 
+    <h2>Powered by Technology</h2> 
 
-  <p>Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful</p>
+    <p class='byline-txt'>Our Artificial Intelligence powered tools use millions of project data points 
+    to ensure that your project is successful</p>
 
-  <div>  
-    <h3>Supervisor</h3>
-    <p>Monitors activity to identify project roadblocks</p>
-  </div> 
-
-  
-  <div>
-    <h3>Team Builder</h3>
-    <p>Scans our talent network to create the optimal team for your project</p>
   </div>
 
+  <div class='content'>
+    <div id='supervisor' class='card border-cyan'>  
+      <h3>Supervisor</h3>
+      <p class='card-txt'>Monitors activity to identify project roadblocks</p>
+      <div class='icon-holder'><img class='icon' src='./images/icon-supervisor.svg'></div>
+    </div> 
 
-  <div> 
-    <h3>Karma</h3>
-    <p>Regularly evaluates our talent to ensure quality</p>
-  </div>
+    
+    <div id='team' class='card border-red'>
+      <h3>Team Builder</h3>
+      <p class='card-txt'>Scans our talent network to create the optimal team for your project</p>
+      <div class='icon-holder'><img class='icon' src='./images/icon-team-builder.svg'></div>
+    </div>
 
-  <div>
-    <h3>Calculator</h3>
-    <p>Uses data from past projects to provide better delivery estimates</p>
+
+    <div id='karma' class='card border-orange'> 
+      <h3>Karma</h3>
+      <p class='card-txt'>Regularly evaluates our talent to ensure quality</p>
+      <div class='icon-holder'><img class='icon' src='./images/icon-karma.svg'></div>
+    </div>
+
+    <div id='calculator' class='card border-blue'>
+      <h3>Calculator</h3>
+      <p class='card-txt'>Uses data from past projects to provide better delivery estimates</p>
+      <div class='icon-holder'><img class='icon' src='./images/icon-calculator.svg'></div>
+    </div>
   </div>
   
   <footer>
